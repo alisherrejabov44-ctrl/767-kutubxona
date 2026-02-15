@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alisherrejabov44-ctrl.github.io/767-kutubxona/sitemap.xml
