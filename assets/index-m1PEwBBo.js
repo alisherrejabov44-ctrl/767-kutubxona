@@ -27,7 +27,7 @@
             <div class="nav-item ${t.view==="main"&&!t.selectedCat?"active":""}" onclick="window.goHome()">🏠 Bosh sahifa</div>
             <div class="nav-item ${t.view==="mybooks"?"active":""}" onclick="window.setView('mybooks')">📚 Mening kitoblarim</div>
             <hr style="margin: 20px 0; border: none; border-top: 2px solid #f1f5f9;">
-            <div style="font-size: 0.75rem; font-weight: 900; color: #94a3b8; margin-bottom: 1rem; padding-left:15px;">MAKTAB FANLARI</div>
+            <div style="font-size: 0.95rem; font-weight: 900; color: #94a3b8; margin-bottom: 0.8rem; padding-left:18px; letter-spacing:1px;">MAKTAB FANLARI</div>
             <div class="nav-scroll">
               ${d.categories.map(i=>d.books[i.id].some(e=>e.grade===t.selectedGrade)?`<div class="nav-item ${t.selectedCat===i.id?"active":""}" onclick="window.setCategory('${i.id}')"><span>${i.icon}</span> ${i.name}</div>`:"").join("")}
             </div>
@@ -55,50 +55,50 @@
         </div>
       </div>
     </div>`}const m=[{c:"🇦🇫",n:"Afghanistan",d:"+93",l:9},{c:"🇦🇱",n:"Albania",d:"+355",l:9},{c:"🇩🇿",n:"Algeria",d:"+213",l:9},{c:"🇦🇷",n:"Argentina",d:"+54",l:10},{c:"🇦🇲",n:"Armenia",d:"+374",l:8},{c:"🇦🇺",n:"Australia",d:"+61",l:9},{c:"🇦🇹",n:"Austria",d:"+43",l:10},{c:"🇦🇿",n:"Azerbaijan",d:"+994",l:9},{c:"🇧🇭",n:"Bahrain",d:"+973",l:8},{c:"🇧🇩",n:"Bangladesh",d:"+880",l:10},{c:"🇧🇾",n:"Belarus",d:"+375",l:9},{c:"🇧🇪",n:"Belgium",d:"+32",l:9},{c:"🇧🇷",n:"Brazil",d:"+55",l:11},{c:"🇧🇬",n:"Bulgaria",d:"+359",l:9},{c:"🇰🇭",n:"Cambodia",d:"+855",l:9},{c:"🇨🇦",n:"Canada",d:"+1",l:10},{c:"🇨🇱",n:"Chile",d:"+56",l:9},{c:"🇨🇳",n:"China",d:"+86",l:11},{c:"🇨🇴",n:"Colombia",d:"+57",l:10},{c:"🇭🇷",n:"Croatia",d:"+385",l:9},{c:"🇨🇺",n:"Cuba",d:"+53",l:8},{c:"🇨🇿",n:"Czech Republic",d:"+420",l:9},{c:"🇩🇰",n:"Denmark",d:"+45",l:8},{c:"🇪🇬",n:"Egypt",d:"+20",l:10},{c:"🇪🇪",n:"Estonia",d:"+372",l:7},{c:"🇪🇹",n:"Ethiopia",d:"+251",l:9},{c:"🇫🇮",n:"Finland",d:"+358",l:10},{c:"🇫🇷",n:"France",d:"+33",l:9},{c:"🇬🇪",n:"Georgia",d:"+995",l:9},{c:"🇩🇪",n:"Germany",d:"+49",l:11},{c:"🇬🇭",n:"Ghana",d:"+233",l:9},{c:"🇬🇷",n:"Greece",d:"+30",l:10},{c:"🇭🇺",n:"Hungary",d:"+36",l:9},{c:"🇮🇳",n:"India",d:"+91",l:10},{c:"🇮🇩",n:"Indonesia",d:"+62",l:11},{c:"🇮🇷",n:"Iran",d:"+98",l:10},{c:"🇮🇶",n:"Iraq",d:"+964",l:10},{c:"🇮🇪",n:"Ireland",d:"+353",l:9},{c:"🇮🇱",n:"Israel",d:"+972",l:9},{c:"🇮🇹",n:"Italy",d:"+39",l:10},{c:"🇯🇵",n:"Japan",d:"+81",l:10},{c:"🇯🇴",n:"Jordan",d:"+962",l:9},{c:"🇰🇿",n:"Kazakhstan",d:"+7",l:10},{c:"🇰🇪",n:"Kenya",d:"+254",l:9},{c:"🇰🇼",n:"Kuwait",d:"+965",l:8},{c:"🇰🇬",n:"Kyrgyzstan",d:"+996",l:9},{c:"🇱🇦",n:"Laos",d:"+856",l:10},{c:"🇱🇻",n:"Latvia",d:"+371",l:8},{c:"🇱🇧",n:"Lebanon",d:"+961",l:8},{c:"🇱🇾",n:"Libya",d:"+218",l:9},{c:"🇱🇹",n:"Lithuania",d:"+370",l:8},{c:"🇲🇾",n:"Malaysia",d:"+60",l:9},{c:"🇲🇽",n:"Mexico",d:"+52",l:10},{c:"🇲🇩",n:"Moldova",d:"+373",l:8},{c:"🇲🇳",n:"Mongolia",d:"+976",l:8},{c:"🇲🇦",n:"Morocco",d:"+212",l:9},{c:"🇲🇲",n:"Myanmar",d:"+95",l:9},{c:"🇳🇵",n:"Nepal",d:"+977",l:10},{c:"🇳🇱",n:"Netherlands",d:"+31",l:9},{c:"🇳🇿",n:"New Zealand",d:"+64",l:9},{c:"🇳🇬",n:"Nigeria",d:"+234",l:10},{c:"🇲🇰",n:"North Macedonia",d:"+389",l:8},{c:"🇳🇴",n:"Norway",d:"+47",l:8},{c:"🇴🇲",n:"Oman",d:"+968",l:8},{c:"🇵🇰",n:"Pakistan",d:"+92",l:10},{c:"🇵🇪",n:"Peru",d:"+51",l:9},{c:"🇵🇭",n:"Philippines",d:"+63",l:10},{c:"🇵🇱",n:"Poland",d:"+48",l:9},{c:"🇵🇹",n:"Portugal",d:"+351",l:9},{c:"🇶🇦",n:"Qatar",d:"+974",l:8},{c:"🇷🇴",n:"Romania",d:"+40",l:9},{c:"🇷🇺",n:"Russia",d:"+7",l:10},{c:"🇸🇦",n:"Saudi Arabia",d:"+966",l:9},{c:"🇷🇸",n:"Serbia",d:"+381",l:9},{c:"🇸🇬",n:"Singapore",d:"+65",l:8},{c:"🇸🇰",n:"Slovakia",d:"+421",l:9},{c:"🇸🇮",n:"Slovenia",d:"+386",l:8},{c:"🇿🇦",n:"South Africa",d:"+27",l:9},{c:"🇰🇷",n:"South Korea",d:"+82",l:10},{c:"🇪🇸",n:"Spain",d:"+34",l:9},{c:"🇱🇰",n:"Sri Lanka",d:"+94",l:9},{c:"🇸🇪",n:"Sweden",d:"+46",l:9},{c:"🇨🇭",n:"Switzerland",d:"+41",l:9},{c:"🇸🇾",n:"Syria",d:"+963",l:9},{c:"🇹🇯",n:"Tajikistan",d:"+992",l:9},{c:"🇹🇿",n:"Tanzania",d:"+255",l:9},{c:"🇹🇭",n:"Thailand",d:"+66",l:9},{c:"🇹🇳",n:"Tunisia",d:"+216",l:8},{c:"🇹🇷",n:"Turkey",d:"+90",l:10},{c:"🇹🇲",n:"Turkmenistan",d:"+993",l:8},{c:"🇦🇪",n:"UAE",d:"+971",l:9},{c:"🇺🇬",n:"Uganda",d:"+256",l:9},{c:"🇬🇧",n:"UK",d:"+44",l:10},{c:"🇺🇦",n:"Ukraine",d:"+380",l:9},{c:"🇺🇸",n:"USA",d:"+1",l:10},{c:"🇺🇿",n:"Uzbekistan",d:"+998",l:9},{c:"🇻🇪",n:"Venezuela",d:"+58",l:10},{c:"🇻🇳",n:"Vietnam",d:"+84",l:9},{c:"🇾🇪",n:"Yemen",d:"+967",l:9}].sort((i,a)=>i.n.localeCompare(a.n)),w=m.findIndex(i=>i.n==="Uzbekistan");w>-1&&m.unshift(m.splice(w,1)[0]);window.loginTab="phone";function S(){const i=t.selectedCountryCode||"+998";u.innerHTML=`
-    <div style="min-height:100vh; background:linear-gradient(135deg, #2563eb 0%, #1e40af 100%); display:flex; align-items:center; justify-content:center; padding: 30px; flex-direction:column;">
+    <div style="min-height:100vh; background:linear-gradient(135deg, #2563eb 0%, #1e40af 100%); display:flex; align-items:center; justify-content:center; padding: 20px; flex-direction:column;">
       
       <!-- PWA Install Button -->
-      <button id="pwaInstallBtn" onclick="window.installPWA()" style="display:none; margin-bottom: 20px; background: white; color: #2563eb; padding: 15px 30px; border-radius: 50px; font-weight: 900; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2); cursor: pointer; animation: bounce 2s infinite;">
+      <button id="pwaInstallBtn" onclick="window.installPWA()" style="display:none; margin-bottom: 20px; background: white; color: #2563eb; padding: 12px 25px; border-radius: 50px; font-weight: 900; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2); cursor: pointer; animation: bounce 2s infinite;">
         📥 Ilovani yuklab olish
       </button>
 
-      <div style="background:white; padding:60px; border-radius:55px; width:100%; max-width:650px; text-align:center; box-shadow: 0 40px 100px rgba(0,0,0,0.4);">
-        <h1 style="font-size: 4rem; font-weight: 950; color: #2563eb; margin-bottom: 5px;">7 6 7</h1>
-        <div style="font-weight: 900; color: #64748b; font-size: 1.2rem; margin-bottom: 30px; letter-spacing: 4px;">KUTUBXONA</div>
+      <div style="background:white; padding:50px 40px; border-radius:40px; width:100%; max-width:600px; text-align:center; box-shadow: 0 30px 80px rgba(0,0,0,0.4);">
+        <h1 style="font-size: 3.5rem; font-weight: 950; color: #2563eb; margin-bottom: 5px;">7 6 7</h1>
+        <div style="font-weight: 900; color: #64748b; font-size: 1.1rem; margin-bottom: 25px; letter-spacing: 4px;">KUTUBXONA</div>
         
         <!-- Login Tabs -->
-        <div style="display:flex; justify-content:center; gap:15px; margin-bottom: 30px;">
-          <button onclick="window.setLoginTab('phone')" style="padding:10px 20px; border-radius:15px; border:none; font-weight:800; cursor:pointer; background:${window.loginTab==="phone"?"#2563eb":"#f1f5f9"}; color:${window.loginTab==="phone"?"white":"#64748b"};">📱 Tel</button>
-          <button onclick="window.setLoginTab('google')" style="padding:10px 20px; border-radius:15px; border:none; font-weight:800; cursor:pointer; background:${window.loginTab==="google"?"#db4437":"#f1f5f9"}; color:${window.loginTab==="google"?"white":"#64748b"};">🇬 Google</button>
-          <button onclick="window.setLoginTab('facebook')" style="padding:10px 20px; border-radius:15px; border:none; font-weight:800; cursor:pointer; background:${window.loginTab==="facebook"?"#4267B2":"#f1f5f9"}; color:${window.loginTab==="facebook"?"white":"#64748b"};">🇫 Facebook</button>
+        <div style="display:flex; justify-content:center; gap:10px; margin-bottom: 25px;">
+          <button onclick="window.setLoginTab('phone')" style="padding:10px 18px; border-radius:12px; border:none; font-weight:800; cursor:pointer; font-size:0.95rem; background:${window.loginTab==="phone"?"#2563eb":"#f1f5f9"}; color:${window.loginTab==="phone"?"white":"#64748b"};">📱 Tel</button>
+          <button onclick="window.setLoginTab('google')" style="padding:10px 18px; border-radius:12px; border:none; font-weight:800; cursor:pointer; font-size:0.95rem; background:${window.loginTab==="google"?"#db4437":"#f1f5f9"}; color:${window.loginTab==="google"?"white":"#64748b"};">🇬 Google</button>
+          <button onclick="window.setLoginTab('facebook')" style="padding:10px 18px; border-radius:12px; border:none; font-weight:800; cursor:pointer; font-size:0.95rem; background:${window.loginTab==="facebook"?"#4267B2":"#f1f5f9"}; color:${window.loginTab==="facebook"?"white":"#64748b"};">🇫 Facebook</button>
         </div>
 
         <div style="margin-top:20px;">
           ${t.showAuthCodeStep?`
-            <input type="number" id="authCodeInput" placeholder="0000" style="width:100%; padding:30px; border-radius:25px; border:4px solid #2563eb; margin-bottom:30px; text-align:center; font-size:3.5rem; letter-spacing:20px; outline:none; font-weight: 950;">
-            <button onclick="window.verifyAuthCode()" class="open-btn" style="width:100%; padding:28px; border-radius:25px; font-size: 1.8rem; font-weight: 950;">TASDIQLASH</button>
+            <input type="number" id="authCodeInput" placeholder="0000" style="width:100%; padding:20px; border-radius:20px; border:3px solid #2563eb; margin-bottom:25px; text-align:center; font-size:2.5rem; letter-spacing:15px; outline:none; font-weight: 950;">
+            <button onclick="window.verifyAuthCode()" class="open-btn" style="width:100%; padding:18px; border-radius:20px; font-size: 1.3rem; font-weight: 950;">TASDIQLASH</button>
           `:`
             
             ${window.loginTab==="phone"?`
-              <div style="display:flex; gap:12px; margin-bottom:25px;">
-                <select id="countrySelect" onchange="window.setCountryCode(this.value)" style="padding:20px 10px; border-radius:20px; border:4px solid #f1f5f9; font-size:1.1rem; font-weight:800; background:white; cursor:pointer; max-width:140px; outline:none;">
+              <div style="display:flex; gap:10px; margin-bottom:20px;">
+                <select id="countrySelect" onchange="window.setCountryCode(this.value)" style="padding:14px 10px; border-radius:16px; border:3px solid #f1f5f9; font-size:1rem; font-weight:800; background:white; cursor:pointer; max-width:130px; outline:none;">
                   ${m.map(a=>`<option value="${a.d}" ${a.d===i?"selected":""}>${a.c} ${a.d}</option>`).join("")}
                 </select>
-                <input type="tel" id="loginPhone" placeholder="90 123 45 67" style="flex:1; padding:20px; border-radius:20px; border:4px solid #f1f5f9; outline:none; font-weight:800; font-size: 1.3rem; text-align:center;">
+                <input type="tel" id="loginPhone" placeholder="90 123 45 67" style="flex:1; padding:14px; border-radius:16px; border:3px solid #f1f5f9; outline:none; font-weight:800; font-size: 1.2rem; text-align:center;">
               </div>
-              <button onclick="window.sendAuthCode()" class="open-btn" style="width:100%; padding:25px; border-radius:25px; font-size: 1.5rem; font-weight: 950; background:#2563eb;">KODNI OLISH</button>
+              <button onclick="window.sendAuthCode()" class="open-btn" style="width:100%; padding:18px; border-radius:20px; font-size: 1.3rem; font-weight: 950; background:#2563eb;">KODNI OLISH</button>
             `:""}
 
             ${window.loginTab==="google"?`
-              <input type="email" id="gmailInput" placeholder="example@gmail.com" style="width:100%; padding:20px; border-radius:20px; border:4px solid #f1f5f9; mb:15px; outline:none; font-weight:700;">
-              <input type="password" id="gmailPass" placeholder="Parol" style="width:100%; padding:20px; border-radius:20px; border:4px solid #f1f5f9; margin:15px 0 25px; outline:none; font-weight:700;">
-              <button onclick="window.loginGoogle()" class="open-btn" style="width:100%; padding:25px; border-radius:25px; font-size: 1.5rem; font-weight: 950; background:#db4437;">GOOGLE ORQALI KIRISH</button>
+              <input type="email" id="gmailInput" placeholder="example@gmail.com" style="width:100%; padding:14px; border-radius:16px; border:3px solid #f1f5f9; mb:12px; outline:none; font-weight:700;">
+              <input type="password" id="gmailPass" placeholder="Parol" style="width:100%; padding:14px; border-radius:16px; border:3px solid #f1f5f9; margin:12px 0 20px; outline:none; font-weight:700;">
+              <button onclick="window.loginGoogle()" class="open-btn" style="width:100%; padding:18px; border-radius:20px; font-size: 1.3rem; font-weight: 950; background:#db4437;">GOOGLE ORQALI KIRISH</button>
             `:""}
 
             ${window.loginTab==="facebook"?`
-              <input type="text" id="fbInput" placeholder="Facebook login/tel" style="width:100%; padding:20px; border-radius:20px; border:4px solid #f1f5f9; mb:15px; outline:none; font-weight:700;">
-              <input type="password" id="fbPass" placeholder="Parol" style="width:100%; padding:20px; border-radius:20px; border:4px solid #f1f5f9; margin:15px 0 25px; outline:none; font-weight:700;">
-              <button onclick="window.loginFacebook()" class="open-btn" style="width:100%; padding:25px; border-radius:25px; font-size: 1.5rem; font-weight: 950; background:#4267B2;">FACEBOOK ORQALI KIRISH</button>
+              <input type="text" id="fbInput" placeholder="Facebook login/tel" style="width:100%; padding:14px; border-radius:16px; border:3px solid #f1f5f9; mb:12px; outline:none; font-weight:700;">
+              <input type="password" id="fbPass" placeholder="Parol" style="width:100%; padding:14px; border-radius:16px; border:3px solid #f1f5f9; margin:12px 0 20px; outline:none; font-weight:700;">
+              <button onclick="window.loginFacebook()" class="open-btn" style="width:100%; padding:18px; border-radius:20px; font-size: 1.3rem; font-weight: 950; background:#4267B2;">FACEBOOK ORQALI KIRISH</button>
             `:""}
 
           `}
