@@ -7,7 +7,7 @@
         <aside>
           <div style="margin-bottom: 2.5rem; position: relative; padding: 10px;">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
-              <h1 style="font-family: 'Outfit'; color: #2563eb; font-size: 1.6rem; margin: 0; font-weight: 900;">7 6 7</h1>
+              <h1 style="font-family: 'Outfit'; color: #2563eb; font-size: 1.6rem; margin: 0; font-weight: 900;">ZERO</h1>
               <button onclick="window.toggleSettings()" style="background: #f1f5f9; border: none; width: 45px; height: 45px; border-radius: 12px; cursor: pointer; font-size: 1.4rem; display: flex; align-items: center; justify-content: center; transition: 0.2s;" onmouseover="this.style.background='#e2e8f0'" onmouseout="this.style.background='#f1f5f9'">⚙️</button>
             </div>
             <div style="font-size: 0.75rem; color: #94a3b8; font-weight: 900; letter-spacing: 2px;">KUTUBXONA</div>
@@ -64,7 +64,7 @@
       </button>
 
       <div style="background:white; padding:50px 40px; border-radius:40px; width:100%; max-width:600px; text-align:center; box-shadow: 0 30px 80px rgba(0,0,0,0.4);">
-        <h1 style="font-size: 3.5rem; font-weight: 950; color: #2563eb; margin-bottom: 5px;">7 6 7</h1>
+        <h1 style="font-size: 3.5rem; font-weight: 950; color: #2563eb; margin-bottom: 5px;">ZERO</h1>
         <div style="font-weight: 900; color: #64748b; font-size: 1.1rem; margin-bottom: 25px; letter-spacing: 4px;">KUTUBXONA</div>
         
         <!-- Login Tabs -->
