@@ -11,6 +11,7 @@
               <button onclick="window.toggleSettings()" style="background: #f1f5f9; border: none; width: 45px; height: 45px; border-radius: 12px; cursor: pointer; font-size: 1.4rem; display: flex; align-items: center; justify-content: center; transition: 0.2s;" onmouseover="this.style.background='#e2e8f0'" onmouseout="this.style.background='#f1f5f9'">⚙️</button>
             </div>
             <div style="font-size: 0.75rem; color: #94a3b8; font-weight: 900; letter-spacing: 2px;">KUTUBXONA</div>
+            <div style="font-size: 0.85rem; color: #64748b; font-weight: 600; margin-top: 8px;">Yaratuvchi: <span style="color:#2563eb; font-weight:800;">Alisher</span></div>
             
             ${t.showSettings?`
               <div style="position: absolute; top: 65px; right: 10px; background: white; border-radius: 18px; box-shadow: 0 15px 40px rgba(0,0,0,0.15); border: 1px solid #e2e8f0; width: 220px; z-index: 1001; overflow: hidden; animation: pageFlip 0.2s ease-out;">
