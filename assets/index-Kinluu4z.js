@@ -81,8 +81,8 @@
             
             ${window.loginTab==="phone"?`
               <div style="display:flex; gap:10px; margin-bottom:20px;">
-                <select id="countrySelect" onchange="window.setCountryCode(this.value)" style="padding:14px 10px; border-radius:16px; border:3px solid #f1f5f9; font-size:1rem; font-weight:800; background:white; cursor:pointer; max-width:130px; outline:none;">
-                  ${m.map(a=>`<option value="${a.d}" ${a.d===i?"selected":""}>${a.c} ${a.d}</option>`).join("")}
+                <select id="countrySelect" onchange="window.setCountryCode(this.value)" style="padding:14px 10px; border-radius:16px; border:3px solid #f1f5f9; font-size:1rem; font-weight:800; background:white; cursor:pointer; max-width:220px; outline:none; text-overflow:ellipsis;">
+                  ${m.map(a=>`<option value="${a.d}" ${a.d===i?"selected":""}>${a.c} ${a.n} (${a.d})</option>`).join("")}
                 </select>
                 <input type="tel" id="loginPhone" placeholder="90 123 45 67" style="flex:1; padding:14px; border-radius:16px; border:3px solid #f1f5f9; outline:none; font-weight:800; font-size: 1.2rem; text-align:center;">
               </div>
